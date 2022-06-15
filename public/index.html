@@ -11,7 +11,42 @@
     <title>Checho Travel</title>
 </head>
 <body>
-    <p>Hello, world</p>
-    <div class="w-64 h-64 bg-secondary"> Error 404, Not Found</div>
+    <nav></nav>
+    <div id="tab_bar"></div>
+    <section class="w-full h-screen">
+        <div id="home">
+            <div class="w-full h-3/4">
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+                    <input class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco" type="search" name="" id="">
+                    <button class=" w-32 rounded-full text-x1 font-semibold p-4 text-primary shadow-sm bg-white">
+                        Explorar
+                    </button>
+                </div>
+                <div class="w-full h-full">
+                    <img src="./img/sanFrancisco.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="p-20" id="recomended">
+            <p class="text-3xl font-semibold text-primary">Recomendados</p>
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 scrollbar-hide">
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-cover bg-norway"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                        <p class="text-bold text-xl text-white px-4 py-2">Norway</p>
+                        <p class="text-white px-4">Paisajes increibles</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-cover bg-new_york"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg">
+                        <p class="text-bold text-xl text-tertiary px-4 py-2">New York</p>
+                        <p class="text-tertiary px-4">La gran manzana</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rents"></div>
+    </section>
 </body>
 </html>
