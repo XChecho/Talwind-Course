@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="../public/css/tailwind.css">
     <title>Checho Travel</title>
 </head>
-<body>
+<body class="font-Montserrat">
     <nav></nav>
     <div id="tab_bar"></div>
-    <section class="w-full h-screen">
+    <section class="w-full h-auto">
+        <!-- HOME DEL ARCHIVO OMEEE!!!!   --->    
         <div id="home">
             <div class="w-full h-3/4">
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                    <input class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco" type="search" name="" id="">
-                    <button class=" w-32 rounded-full text-x1 font-semibold p-4 text-primary shadow-sm bg-white">
+                    <input class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search" name="" id="">
+                    <button class=" w-48 rounded-full text-lg font-semibold p-4 text-primary shadow-sm bg-white transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
                         Explorar
                     </button>
                 </div>
@@ -27,7 +28,107 @@
                 </div>
             </div>
         </div>
+
+        <!-- Recomendados, otra sección de la página.-->        
         <div class="p-20" id="recomended">
+            <p class="text-3xl font-semibold text-primary">Recomendados</p>
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 scrollbar-hide overflow-y-hidden">
+                <div class="Card">
+                    <div class="Card--cover bg-norway"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Norway</p>
+                        <p class="Card--info__subtitle">Paisajes increaibles</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-new_york"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">New York</p>
+                        <p class="Card--info__subtitle">La gran manzana</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-yosemite"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Yosemite</p>
+                        <p class="Card--info__subtitle">Una pausa del mundo</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-seattle"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Seatle</p>
+                        <p class="Card--info__subtitle">El gran puerto del este </p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-switzerland"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Suiza</p>
+                        <p class="Card--info__subtitle">Y sus majestuoso alpes</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-miami"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Miami</p>
+                        <p class="Card--info__subtitle">Sol, playa y arena</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-chicago"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Chicago</p>
+                        <p class="Card--info__subtitle">La ciudad de los vientos</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-LA"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Los Angeles</p>
+                        <p class="Card--info__subtitle">Hollywood y sus estrellas</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-iceland"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Islandia</p>
+                        <p class="Card--info__subtitle">Una historia vikinga</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-bali"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Bali</p>
+                        <p class="Card--info__subtitle">Cultura de una ciudad ancestral</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-europe"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Europa</p>
+                        <p class="Card--info__subtitle">El viejo continente</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-sydney"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Sydney</p>
+                        <p class="Card--info__subtitle">La opera australiana</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-sanFranciscoDesktop"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">San Francisco</p>
+                        <p class="Card--info__subtitle">Los puentes del mundo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Código utilizado originalmente===>>>. -->
+        <!-- <div class="p-20" id="recomended">
             <p class="text-3xl font-semibold text-primary">Recomendados</p>
             <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 scrollbar-hide">
                 <div class="Card">
@@ -43,10 +144,72 @@
                         <p class="text-bold text-xl text-tertiary px-4 py-2">New York</p>
                         <p class="text-tertiary px-4">La gran manzana</p>
                     </div>
+                </div> -->
+        </div>
+
+        <!-- Rentas destacadas. Sección 3.-->
+        <div class="px-2 h-auto w-full" id="rents">
+            <p class="text-3xl text-primary font-semibold pb-6 mt-6">Rentas destacadas</p>
+            <div class="w-full h-full flex-col space-y-6 items-center justify-center">
+                <div class="w-full h-96 bg-chicago bg-cover rounded-xl ">
+                    <p class="CardTitle">Chicago</p>
+                    <p class=" text-sm pl-8 text-white mr-24">2 habitaciones, baño y cocina</p>
+                </div>
+                <div class="w-full h-96 bg-bali bg-cover rounded-xl ">
+                    <p class="CardTitle">Bali</p>
+                    <p class=" text-sm pl-8 text-white mr-24">3 habitaciones, 2 baños, piscina, sauna y cocina</p>
+                </div>
+                <div class="w-full h-96 bg-miami bg-cover rounded-xl ">
+                    <p class="CardTitle">Miami</p>
+                    <p class=" text-sm pl-8 text-white mr-24">3 habitaciones, 2 baños, piscina, sauna y cocina</p>
+                </div>
+                <div class="w-full h-96 bg-switzerland bg-cover rounded-xl ">
+                    <p class="CardTitle">Suiza</p>
+                    <p class=" text-sm pl-8 text-white mr-24">2 habitaciones, 2 baños y cocina</p>
                 </div>
             </div>
         </div>
-        <div id="rents"></div>
+
+        <!-- FAQS Sección 4.-->
+        <div class="w-full h-auto mb-32 mt-12" id="faqs">
+            <div class="w-full h-full px-6 flex-col space-y-4">
+                <p class="text-3xl text-primary font-semibold mt-6">FAQS</p>
+                <div>
+                    <p class="text.xl font-medium text-primary">Polílitca de cancelación</p>
+                    <p class="text-md pt-2">Para estancias menores a una semana es importante avisar con 3 días de anticipación, de caso contario será sancionado.</p>
+                </div>
+                <div>
+                    <p class="text.xl font-medium text-primary">Métodos de pago</p>
+                    <p class="text-md pt-2">Aceptamos distintos métodos de pago: VISA, MasterCard, American Express, Paypal y Binance.</p>
+                </div>
+                <div>
+                    <p class="text.xl font-medium text-primary">Estancias largas</p>
+                    <p class="text-md pt-2">Contamos con estancias de hasta 3 meses, en este caso es requerido un anticipo con un monto del 50% del valor de la renta.</p>
+                </div>
+                <div>
+                    <p class="text.xl font-medium text-primary">Mascotas</p>
+                    <p class="text-md pt-2">Las mascotas están condicionadas con cada anfitrión.</p>
+                </div>
+                <div>
+                    <p class="text.xl font-medium text-primary">Información de seguridad</p>
+                    <p class="text-md pt-2">Todas nuestras estancias cuentan con su propio seguro contra todo riesgos, y seguros médicos.</p>
+                </div>
+            </div>
+        </div>
+
+        
     </section>
+    <!-- Footer-->
+    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2">
+        <p class="text-lg">About us</p>
+        <p class="text-sm text-gray-300">Inversionistas.</p>
+        <p class="text-sm text-gray-300">Sedes.</p>
+        <p class="text-sm text-gray-300">Términos y condiciones.</p>
+        <p class="text-sm text-gray-300">Checho Travel, Inc.</p>
+        <p class="text-sm text-gray-300">Trabaja con nosotros.</p>
+        <p class="text-sm text-gray-300">Contactanos:</p>
+        <p class="text-xs text-gray-300">+57-315 627 2450 Calle 100 #16A-72 Kanata 103.</p>
+        <p class="text-xs text-gray-300">Pereira, Risaralda. Colombia</p>
+    </footer>
 </body>
 </html>
