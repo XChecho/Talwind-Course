@@ -6,23 +6,23 @@
   @apply w-48 h-64 shadow-md rounded-lg overflow-hidden flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
 }
 .Card--cover { 
-  @apply w-full h-3/5 bg-cover;
+  @apply w-full h-3/5 bg-cover ;
 }
 .Card--info {
-  @apply w-full h-2/5 bg-secondary;
+  @apply w-full h-2/5 bg-secondary dark:bg-gray-700;
 }
 .Card--info__title {
-  @apply text-white font-bold text-xl px-4 py-2;
+  @apply text-white font-bold text-xl px-4 py-2 dark:text-blue-300;
 }
 .Card--info__subtitle {
-  @apply text-white text-base px-4;
+  @apply text-white text-base px-4 dark:text-blue-300;
 }
 .Card:nth-child(even) .Card--info {
-  @apply bg-white;
+  @apply bg-white dark:bg-gray-800;
 }
 .Card:nth-child(even) .Card--info__title,
 .Card:nth-child(even) .Card--info__subtitle {
-  @apply text-tertiary;
+  @apply text-tertiary dark:text-blue-300;
 }
 .CardTitle{
   @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white;
