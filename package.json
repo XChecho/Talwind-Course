@@ -2,10 +2,11 @@
   "name": "talwind-course",
   "version": "1.0.0",
   "description": "Project of Tailwind",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
+    "tw:dev": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
+    "tw:build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify"
   },
   "repository": {
     "type": "git",
